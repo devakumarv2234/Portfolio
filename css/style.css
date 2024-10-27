@@ -90,7 +90,9 @@ section{
     justify-content: center;
     align-items: center;
     margin-left: 0; /* Ensure there's no left margin */
+    animation: slide-in-top 2s ease-in-out forwards; /* Slide-in from top animation */
 }
+
 .parent {
     display: flex;
     justify-content: flex-start; /* Align children to the left */
@@ -101,7 +103,41 @@ section{
     border-radius: 50%;
     background: var(--main-color);
     border: .2rem solid var(--main-color);
+    animation: fade-in 1.5s ease-in-out forwards, scale-up 2s ease-in-out forwards; /* Fade-in and scale-up animation */
 }
+
+/* Slide-in animation from top */
+@keyframes slide-in-right {
+    0% {
+        transform: translateY(-100%); /* Start from outside the top of the screen */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* End in the default position */
+        opacity: 1;
+    }
+}
+
+/* Fade-in animation for the image */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Scale-up animation for the image */
+@keyframes scale-up {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 .home-content{
     max-width: 60rem;
