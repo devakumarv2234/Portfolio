@@ -867,4 +867,11 @@ h2 {
 .btn-box{
     margin-right: 28%;
 }
+.footer-icontop a i{
+    font-size: .5rem;
+}
+.footer-text{
+    font-size: 1rem;
+}
+
 }
