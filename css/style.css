@@ -817,40 +817,54 @@ h2 {
       max-width: 45%;
       height: auto;
     }
-}
-@media (max-width: 509px) {
+}@media (min-width: 109px) {
     .header {
       background: var(--bg-color);
     }
-  
-        .text-animate {
-        margin-left: 5%;
-        
+
+    .home-content h1,.highlight{
+        font-size: 3rem;
+        padding: 10px;
     }
-    .text-animate h3{
-        font-size: .5rem;
+    .text-animate {
+        margin-left: .1%;
     }
-  
+
+    .home-content .text-animate h3 {
+        font-size: 2.5rem; /* Adjust font size for better readability */
+    }
+
     .home-sci {
         justify-content: center;
         margin-top: 1rem;
+        width: 100%; /* Ensure the social icons container is full width */
     }
       
     .image {
         margin-top: 8rem;
-        width: 100%; /* Ensure image doesn't overflow */
-        padding: 0; /* Remove padding to prevent overflow */
+        width: 100%; /* Ensure the image container doesn't overflow */
+        padding: 0; /* Remove any padding to prevent overflow */
+        box-sizing: border-box; /* Ensure padding and border are included in the width */
     }
   
     .image img {
-      max-width: 35%;
-      height: auto;
-      display: block;
-      margin: 0 auto; /* Center the image */
+        max-width: 65%;
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Center the image */
     }
 
+    section {
+        padding: 0 5%; /* Adjust the padding to avoid space on the right */
+    }
 
     .footer {
-      padding: 1rem 5%;
+        padding: 1rem 5%;
     }
+    .home-content p{
+        font-size: 1.9rem;
+    }
+.btn-box{
+    margin-right: 28%;
+}
 }
