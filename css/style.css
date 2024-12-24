@@ -224,7 +224,7 @@ width: 32.8rem;
 
 .home-sci{
     position: absolute;
-    bottom: 15rem;
+    bottom: 13rem;
     width: 250px;
     display: flex;
     justify-content: space-between;
@@ -694,9 +694,8 @@ h2 {
 
 /* Align the Read Me button in the center */
 
-
 /* Media Queries for Responsiveness */
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
     .header {
       padding: 1rem 5%;
     }
@@ -705,10 +704,7 @@ h2 {
       flex-direction: column;
       align-items: center;
     }
-
-    .text-animate{
-        margin-left: 15%;
-    }
+    
     .btn-box{
         margin-right: 20%;
     }
@@ -721,7 +717,6 @@ h2 {
         gap: 1.5rem;  /* Adds space between the icons */
      }
       
-  
     .image {
       order: -1; /* Ensures the image appears first */
       margin-bottom: 1.5rem;
@@ -731,7 +726,6 @@ h2 {
       max-width: 100%;
       text-align: center;
     }
-  
     
     section {
       padding: 2rem 10%;
@@ -743,13 +737,16 @@ h2 {
     .footer {
       padding: 1rem 5%;
     }
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 868px) {
     .header {
       background: var(--bg-color);
     }
-  
+    .text-animate{
+        margin-left: 15%;
+    }
+
     #menu-icon {
       display: block;
     }
@@ -792,8 +789,8 @@ h2 {
   
     .navbar a {
       display: block;
-      font-size: 2rem;
-      margin: 3rem 0;
+      font-size: 1.8rem;
+      margin: 2rem 0;
       transform: translateX(-20rem);
       transition: .25s ease;
       transition-delay: 0s;
@@ -804,15 +801,13 @@ h2 {
       transition-delay: .25s;
     }
     .home-content h1,.highlight{
-        font-size: 3.6rem;
+        font-size: 4.2rem;
     }
-  
   
     .home-sci {
         justify-content: center;
         margin-top: 1rem;
       }
-  
       
     .image {
         margin-top: 8rem;
@@ -822,4 +817,40 @@ h2 {
       max-width: 45%;
       height: auto;
     }
-  }
+}
+@media (max-width: 509px) {
+    .header {
+      background: var(--bg-color);
+    }
+  
+        .text-animate {
+        margin-left: 5%;
+        
+    }
+    .text-animate h3{
+        font-size: .5rem;
+    }
+  
+    .home-sci {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+      
+    .image {
+        margin-top: 8rem;
+        width: 100%; /* Ensure image doesn't overflow */
+        padding: 0; /* Remove padding to prevent overflow */
+    }
+  
+    .image img {
+      max-width: 35%;
+      height: auto;
+      display: block;
+      margin: 0 auto; /* Center the image */
+    }
+
+
+    .footer {
+      padding: 1rem 5%;
+    }
+}
